@@ -1,5 +1,5 @@
 data = "THIS IS A TEST!"
 
-x = data.isupper()
+x = data.isupper() 
 
-print(x)
+print(x) # Since all the alphabetic characters are uppercase, isupper() will return True.

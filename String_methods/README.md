@@ -89,7 +89,7 @@ string.lower()
 
 # .swapcase() string method
 
-The python '.swapcase'  method in Python is a built-in string method used to  swap the case of all characters in a string. Uppercase letters are converted to lowercase. Lowercase letters are converted to uppercase. Non-alphabetic characters (e.g., numbers, symbols, whitespace) remain unchanged. The .swapcase() method does not accept any arguments. If you try to pass any arguments, it will raise a TypeError. The original string is not modified. Instead, a new string is returned. Characters like numbers, symbols, and whitespace are not affected. The method is locale-aware, meaning it handles special characters and accented letters according to the rules of the current locale.
+The python '.swapcase' is a built-in string method used to  swap the case of all characters in a string. Uppercase letters are converted to lowercase. Lowercase letters are converted to uppercase. Non-alphabetic characters (e.g., numbers, symbols, whitespace) remain unchanged. The .swapcase() method does not accept any arguments. If you try to pass any arguments, it will raise a TypeError. The original string is not modified. Instead, a new string is returned. Characters like numbers, symbols, and whitespace are not affected. The method is locale-aware, meaning it handles special characters and accented letters according to the rules of the current locale.
 
 Return Value
 
@@ -107,7 +107,42 @@ syntax:
 
 string.swapcase()
 
+# .capitalize() string method
 
+The python '.capitalize' is a built-in string method used to modify the first character of a string uppercase and the rest lowercase. the '.capitalize()' method does not take any arguments. It operates directly on the string it is called on. When using the string we need to remeber that only the first alphabetic character is capitalized; the rest are forced to lowercase. Non-alphabetic characters (like numbers or symbols) at the start of the string remain unchanged. Whitespace at the beginning is preserved. so in general we can use the string '.capitalize()' when formatting user input for consistent capitalization (e.g., names, titles). Standardizing strings where only the first letter should be uppercase.
+
+Return value
+
+* Returns a new string (original string remains unchanged since strings are immutable in Python).
+* If the string starts with a non-alphabetic character (e.g., a number or symbol), it remains unchanged, but subsequent letters are lowercased.
+* If the string is empty, it returns an empty string ("").
+
+Limitations   
+
+1. Whitespace at the Start Affects Results
+2. Does Not Handle Multiple Words Properly
+
+syntax:
+
+string.capitalize()
+
+# .title() string method
+
+The python '.tiltle' is a built-in Python string method that converts the first character of each word in a string to uppercase and makes all other characters in the word lowercase. The original string remains unchanged (strings are immutable in Python). It also capitalizes letters following numbers/symbols. '.tiltle' is mostly used when we want to Simple title formatting where these limitations don't matter, quick formatting of names or simple phrases,it works with user input like any other string method and also when we want consistent capitalization of each word. 
+
+Return value
+
+* First letter of each word is capitalized
+* All other letters in each word are lowercase
+
+Limitations
+
+1. Apostrophe Issues
+2. Acronym Problems. "NASA and FBI".title()  # Returns "Nasa And Fbi" 
+
+syntax:
+
+string.title()
 
 
 

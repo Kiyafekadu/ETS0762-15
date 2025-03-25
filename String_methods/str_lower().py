@@ -20,11 +20,11 @@ name = input("What is your name?")
 # User writes their name...
 
 if name.lower() == "kiya":
-  print("Your name is KIYA!")
+  print("Your name is Kiya!")
 else:
   print("Your name is not Kiya.")
 
-#This would print Your name is Codey! whether the user typed in Codey, codey, CODEY, or CoDeY.
+#This would print Your name is Kiya! whether the user typed in Kiya, kiya, KIYA, or kIyA.
 
 #Example 3
 #The .lower() method does not change the string it is used on:

@@ -336,7 +336,7 @@ The Python .format() method formats specified values in a string using positiona
 
 Syntax:
 
-**string.format(*args, **kwargs)**
+**string.format(placeholder_1, placeholder_2)**
 
 # .encode() string method
 

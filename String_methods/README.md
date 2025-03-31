@@ -142,8 +142,225 @@ Limitations
 
 syntax:
 
-string.title()
+**string.title()**
 
+# .find() string method
+
+The Python .find() function is a built-in string method that returns the lowest index of the substring if found in the string. If the substring is not found, it returns -1. The search can be limited to a specific range of indices.
+
+Return Value
+
+* Integer: Index of first occurrence of the substring
+
+* -1: If substring is not found
+
+Limitations
+
+1. Case-sensitive
+
+2. Doesn't support regular expressions
+
+Syntax:
+
+**string.find(substring, start, end)**
+
+# .index() string method
+
+The Python .index() method is similar to .find() but raises a ValueError if the substring is not found. It returns the lowest index where the substring begins.
+
+Return Value
+
+* Integer: Index of first occurrence
+
+* ValueError: If substring not found
+
+Limitations
+
+1. Case-sensitive
+
+2. Requires error handling
+
+Syntax:
+
+**string.index(substring, start, end)**
+
+# .startswith() string method
+
+The Python .startswith() method checks if a string starts with the specified prefix. It can optionally check starting at a specific position and ending at another.
+
+Return Value
+
+* True: If string starts with prefix
+
+* False: Otherwise
+
+Syntax:
+
+**string.startswith(prefix, start, end)**
+
+# .endswith() string method
+
+The Python .endswith() method checks if a string ends with the specified suffix. It can optionally check within a slice of the string.
+
+Return Value
+
+* True: If string ends with suffix
+
+* False: Otherwise
+
+Syntax:
+
+**string.endswith(suffix, start, end)**
+
+# .count() string method
+
+The Python .count() method returns the number of non-overlapping occurrences of a substring in the string. The search can be limited to a slice.
+
+Return Value
+
+* Integer: Count of occurrences
+
+Syntax:
+
+**string.count(substring, start, end)**
+
+# .replace() string method
+
+The Python .replace() method returns a copy of the string where all occurrences of a substring are replaced with another substring.
+
+Return Value
+
+* New string with replacements
+
+Syntax:
+
+**string.replace(old, new, count)**
+
+# .strip() string method
+
+The Python .strip() method returns a copy of the string with leading and trailing whitespace removed. Optional characters can be specified for removal.
+
+Return Value
+
+* New stripped string
+
+Syntax:
+
+**string.strip(characters)**
+
+# .lstrip() string method
+
+The Python .lstrip() method returns a copy of the string with leading whitespace removed. Optional characters can be specified.
+
+Syntax:
+
+**string.lstrip(characters)**
+
+# .rstrip() string method
+
+The Python .rstrip() method returns a copy of the string with trailing whitespace removed. Optional characters can be specified.
+
+Syntax:
+
+**string.rstrip(characters)**
+
+# .split() string method
+
+The Python .split() method breaks a string into a list of substrings using a specified separator.
+
+Return Value
+
+* List of substrings
+
+Syntax:
+
+**string.split(separator, maxsplit)**
+
+# .join() string method
+
+The Python .join() method concatenates any iterable of strings with the string as a separator.
+
+Return Value
+
+* Concatenated string
+
+Syntax:
+
+**string.join(iterable)**
+
+# .isalpha() string method
+
+The Python .isalpha() method checks if all characters in the string are alphabetic.
+
+Return Value
+
+* True: If all characters are alphabetic
+
+* False: Otherwise
+
+Syntax:
+
+**string.isalpha()**
+
+# .isalnum() string method
+
+The Python .isalnum() method checks if all characters are alphanumeric (letters or numbers).
+
+Return Value
+
+* True: If all characters are alphanumeric
+
+* False: Otherwise
+
+Syntax:
+
+**string.isalnum()**
+
+# .isspace() string method
+
+The Python .isspace() method checks if all characters are whitespace.
+
+Return Value
+
+* True: If all characters are whitespace
+
+* False: Otherwise
+
+Syntax:
+
+**string.isspace()**
+
+# .format() string method
+
+The Python .format() method formats specified values in a string using positional or keyword arguments.
+
+Syntax:
+
+**string.format(*args, **kwargs)**
+
+# .encode() string method
+
+The Python .encode() method returns an encoded version of the string using the specified encoding.
+
+Return Value
+
+* Bytes object
+
+Syntax:
+
+**string.encode(encoding, errors)**
+
+# .zfill() string method
+
+The Python .zfill() method pads a numeric string with zeros on the left to fill the specified width.
+
+Return Value
+
+* Zero-filled string
+
+Syntax:
+
+**string.zfill(width)**
 
 
 

@@ -173,7 +173,7 @@ Returns True if all elements of other are in the set.
 **Return Value:**
 * Boolean
 
-**Alias:*8
+**Alias:**
 * Can also be written using >= operator: a >= b
 
 # pop()
